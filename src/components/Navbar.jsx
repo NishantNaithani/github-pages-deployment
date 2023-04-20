@@ -9,7 +9,7 @@ const navigate = useNavigate()
 const handleLogout = async () => {
   try {
     await logOut();
-    navigate('/')
+    navigate('/github-pages-deployment/')
   } catch(error) {
     console.log(error);
   }
@@ -22,7 +22,7 @@ const handleLogout = async () => {
       </Link>
      {user?.email ? 
       <div>
-      <Link to = '/account' >
+      <Link to = '/github-pages-deployment/account' >
       <button className='text-white pr-4'>Account</button>
       </Link>
       
@@ -32,10 +32,10 @@ const handleLogout = async () => {
         
     </div> :
      <div>
-     <Link to = '/login' >
+     <Link to = '/github-pages-deployment/login' >
      <button className='text-white pr-4'>Sign In</button>
      </Link>
-     <Link to = '/signUp' >
+     <Link to = '/github-pages-deployment/signUp' >
      <button className='bg-red-600 px-6 py-2 rounded cursor-pointer text-white'>
        Sign Up
        </button>

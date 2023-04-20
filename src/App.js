@@ -10,25 +10,24 @@ import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
-    <div >
-      <AuthContextProvider>
+    <>
+        <AuthContextProvider>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signUp" element={<SignUp />} />
-        <Route path="/account" element={
+        <Route path="/github-pages-deployment/home" element={<Home />} />
+        <Route path="/github-pages-deployment/login" element={<Login />} />
+        <Route path="/github-pages-deployment/signUp" element={<SignUp />} />
+        <Route path="/github-pages-deployment/account" element={
         <ProtectedRoute> 
           
           <Account />
           </ProtectedRoute> } />
           
-        <Route exaxt path='/' element={ <Navigate to="/home" /> }/>
-        <Route exaxt path='/github-pages-deployment' element={ <Navigate to="/home" /> }/>
+        <Route exaxt path='/' element={ <Navigate to="/github-pages-deployment/home" /> }/>
       </Routes>
       </AuthContextProvider>
      
-    </div>
+    </>
   );
 }
 
