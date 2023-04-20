@@ -14,7 +14,7 @@ function App() {
         <AuthContextProvider>
       <Navbar />
       <Routes>
-        <Route path="/github-pages-deployment/home" element={<Home />} />
+        <Route path="/github-pages-deployment/" element={<Home />} />
         <Route path="/github-pages-deployment/login" element={<Login />} />
         <Route path="/github-pages-deployment/signUp" element={<SignUp />} />
         <Route path="/github-pages-deployment/account" element={
@@ -23,7 +23,6 @@ function App() {
           <Account />
           </ProtectedRoute> } />
           
-        <Route exaxt path='/' element={ <Navigate to="/github-pages-deployment/home" /> }/>
       </Routes>
       </AuthContextProvider>
      
