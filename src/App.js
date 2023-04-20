@@ -23,7 +23,8 @@ function App() {
           <Account />
           </ProtectedRoute> } />
           
-          <Route exaxt path='/' element={ <Navigate to="/home" /> }/>
+        <Route exaxt path='/' element={ <Navigate to="/home" /> }/>
+        <Route exaxt path='/github-pages-deployment' element={ <Navigate to="/home" /> }/>
       </Routes>
       </AuthContextProvider>
      
